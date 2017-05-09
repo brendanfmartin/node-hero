@@ -1,0 +1,22 @@
+{
+  "name": "node-hero",
+  "version": "1.0.0",
+  "description": "sample node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendanfmartin/node-hero.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Brendan Martin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/brendanfmartin/node-hero/issues"
+  },
+  "homepage": "https://github.com/brendanfmartin/node-hero#readme"
+}
