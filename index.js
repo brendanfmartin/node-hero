@@ -1,1 +1,1 @@
-console.log('test');
+require('./app/index.js');
