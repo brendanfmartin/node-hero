@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/brendanfmartin/node-hero#readme",
   "dependencies": {
+    "express": "^4.15.2",
     "lodash": "^4.17.4"
   },
   "devDependencies": {

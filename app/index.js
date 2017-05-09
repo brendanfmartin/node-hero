@@ -1,9 +1,21 @@
-const calc = require('./calc');
-const _ = require('lodash');
+const express = require('express');
+const app = express();
+const port = 8888;
 
-const num = [
-  2,3,4
-];
+app.use((request, response, next) => {
+  console.log(request.headers);
+  next()
+});
 
-console.log(`The result is: ${calc.sum(num)}`);
-console.log(_.assign({'a': 1},{'b': 2}));
+app.use((request, response, next) => {
+  request.chance = Math.random();
+  next()
+});
+
+app.get('/', (request, response) => {
+  response.json({
+    chance: request.chance
+  })
+});
+
+app.listen(port);
